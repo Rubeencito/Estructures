@@ -57,6 +57,8 @@ document.write("Array inicial => " + arrayfusionat + "<br>")
 document.write("Array elevat al cub => " + elevarCub)
 */
 
+//EX6
+/*
 var paraules = ["ardilla", "pantalla", "raton", "pelota"]
 var paraulesA = [];
 var a = 0
@@ -75,6 +77,15 @@ for(var i = 0; i < paraules.length; i++) {
 }
 document.write("Array inicial => " + paraules + "<br>")
 document.write("Array final => " + paraulesA)
+*/
+
+let map = new Map();
+map.set('1', 'cadena')
+map.set(1, 'numero')
+map.set(true, 'boolean')
+document.write(map.get('1') + "<br>")
+document.write(map.get(1) + "<br>")
+document.write(map.get(true))
 
 
 
