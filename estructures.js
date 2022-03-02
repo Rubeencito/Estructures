@@ -47,12 +47,34 @@ document.write("Segon array<br>" + array2 + "<br>")
 document.write("Array sense repeticions <br>" + array3)
 */
 
+//EX5
+/*
 var arrayfusionat = [1, 3, 6, 10];
 var elevarCub = arrayfusionat.map(function(x) {
    return Math.pow(x,3);
 });
 document.write("Array inicial => " + arrayfusionat + "<br>")
 document.write("Array elevat al cub => " + elevarCub)
+*/
+
+var paraules = ["ardilla", "pantalla", "raton", "pelota"]
+var paraulesA = [];
+var a = 0
+var cont = 0
+for(var i = 0; i < paraules.length; i++) {
+  for(var j = 0; j < paraules[i].length; j++){
+	  if (paraules[i][j] == 'a'){
+      cont++ 
+      if (cont == 2){
+        paraulesA[a] = paraules[i];
+        a++
+      }
+    }
+  }
+  cont = 0
+}
+document.write("Array inicial => " + paraules + "<br>")
+document.write("Array final => " + paraulesA)
 
 
 
