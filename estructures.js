@@ -24,6 +24,8 @@ const arrayFinal = new Set (arrayFusionat);
 console.log(arrayFinal)
 */
 
+//4
+/*
 var array1 = [1,2,3,5,7,9]
 var array2 = [1,2,4,5,8,10]
 const arrayfusionat = array1.concat(array2);
@@ -43,5 +45,14 @@ document.write("Primer array<br>" + array1 + "<br>")
 document.write("Segon array<br>" + array2 + "<br>") 
   
 document.write("Array sense repeticions <br>" + array3)
+*/
+
+var arrayfusionat = [1, 3, 6, 10];
+var elevarCub = arrayfusionat.map(function(x) {
+   return Math.pow(x,3);
+});
+document.write("Array inicial => " + arrayfusionat + "<br>")
+document.write("Array elevat al cub => " + elevarCub)
+
 
 
